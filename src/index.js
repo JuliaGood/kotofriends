@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import reportWebVitals from './reportWebVitals';
 import Card from './Card';
 import 'tachyons';
 import {robots} from './robots';
@@ -13,3 +14,5 @@ ReactDOM.render(
     <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
   </div>
 , document.getElementById('root'));
+
+reportWebVitals();
