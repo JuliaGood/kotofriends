@@ -5,10 +5,11 @@ import {
     REQUEST_ROBOTS_SUCCESS,
     REQUEST_ROBOTS_FAILED
  } from './constants.js'
-
-export const setSearchField = (text) => ({
+// we will send this 'setSearchField' action to the dispatch() redux-method
+export const setSearchField = (text) => ({ 
     type: CHANGE_SEARCH_FIELD,
-    payload: text
+    payload: text //save this data to the store? (Vital)
+    //payload - send data to reducer? (Neagoie)
 })
 
 export const requestRobots = () => (dispatch) => {

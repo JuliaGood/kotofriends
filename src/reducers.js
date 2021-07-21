@@ -8,11 +8,15 @@ import {
 const initialStateSearch = {
     searchField: ''
 }
-
+// reducer f - (the redux function 'dispatch()' will lanch our own-created reducer function)
+// to be exactly: dispatch() redux-method will TAKE this reducer automatically from STORE 
+// reducer needs for: which state we need do change and put into the store-object
+// Neagoie: reducer F reads the action and spits out state
+// reducer takes/gets the input of a state & an action
 export const searchRobots = (state=initialStateSearch, action={}) => {
     switch(action.type) {
         case CHANGE_SEARCH_FIELD :
-            return {... state, searchField: action.payload };
+            return {... state, searchField: action.payload }; //new State
         default:
             return state;
     }
