@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll';
+import CardList from '../card-list/CardList';
+import SearchBox from '../search-box/SearchBox';
+import Scroll from '../scroll-box/ScrollBox';
 import './App.css';
-import { setSearchField, requestRobots } from '../actions.js';
+import { setSearchField, requestKotos } from '../../common/actions.js';
 // we`ve imported actions in here because ... we need to pass it to dispatch() redux-method?
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => { // is telling WHAT state need to listen to and send down as props
     return { // redux puts these 4 values into props
-        searchField: state.searchRobots.searchField,
-        robotsArray: state.requestRobots.robots, 
-        isPending: state.requestRobots.isPending,
-        error: state.requestRobots.error
+        searchField: state.searchKotos.searchField,
+        kotosArray: state.requestKotos.kotos, 
+        isPending: state.requestKotos.isPending,
+        error: state.requestKotos.error
     }
 }
 
@@ -20,30 +20,30 @@ const mapDispatchToProps = (dispatch) => { // is telling WHAT props it should li
     // we need dispatch to send an 'action' into reducer (?)
   return { // redux puts these 2 functions into props
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-    onRequestRobots: () => dispatch(requestRobots())
+    onRequestKotos: () => dispatch(requestKotos())
   }
 }
 
 class App extends Component {
     componentDidMount() {
-      this.props.onRequestRobots();
+      this.props.onRequestKotos();
     }
 
     render() { 
-        const { robotsArray, searchField, onSearchChange, isPending } = this.props;
-        const filteredRobots = robotsArray.filter(robot => {
-            return robot.name.toLowerCase().includes(searchField.toLowerCase());
+        const { kotosArray, searchField, onSearchChange, isPending } = this.props;
+        const filteredKotos = kotosArray.filter(koto => {
+            return koto.name.toLowerCase().includes(searchField.toLowerCase());
         });
 
         if(isPending) {
             return <h1 className='tc'>Loading</h1>
         } else {
             return (
-                <div className='tc'> 
-                    <h1 className='f1'>robofriends</h1>
+                <div className='app tc'> 
+                    <h1 className='f1'>kotofriends</h1>
                     <SearchBox searchChange={onSearchChange} />
                     <Scroll> 
-                        <CardList robots={filteredRobots}/>
+                        <CardList kotos={filteredKotos}/>
                     </Scroll>
                 </div>
             );
