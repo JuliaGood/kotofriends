@@ -1,6 +1,6 @@
 {
-  "short_name": "Robofriends",
-  "name": "Create React Robofriends App",
+  "short_name": "Kotofriends",
+  "name": "React Kotofriends App",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

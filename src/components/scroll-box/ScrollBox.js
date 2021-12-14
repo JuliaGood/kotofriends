@@ -1,12 +1,8 @@
-import React from 'react';
-import './scrollBox.css';
+import React from "react";
+import "./scrollBox.css";
 
 const ScrollBox = (props) => {
-    return (
-        <div className="scroll-box">
-            {props.children}
-        </div>
-    );
-}
+  return <div className="scroll-box">{props.children}</div>;
+};
 
 export default ScrollBox;
