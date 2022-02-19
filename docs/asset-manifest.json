@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/kotofriends/static/css/main.fc98a8a9.chunk.css",
+    "main.js": "/kotofriends/static/js/main.16a06e56.chunk.js",
+    "main.js.map": "/kotofriends/static/js/main.16a06e56.chunk.js.map",
+    "runtime-main.js": "/kotofriends/static/js/runtime-main.7b543eda.js",
+    "runtime-main.js.map": "/kotofriends/static/js/runtime-main.7b543eda.js.map",
+    "static/css/2.6d7c7915.chunk.css": "/kotofriends/static/css/2.6d7c7915.chunk.css",
+    "static/js/2.73a0657a.chunk.js": "/kotofriends/static/js/2.73a0657a.chunk.js",
+    "static/js/2.73a0657a.chunk.js.map": "/kotofriends/static/js/2.73a0657a.chunk.js.map",
+    "static/js/3.4177b087.chunk.js": "/kotofriends/static/js/3.4177b087.chunk.js",
+    "static/js/3.4177b087.chunk.js.map": "/kotofriends/static/js/3.4177b087.chunk.js.map",
+    "index.html": "/kotofriends/index.html",
+    "static/css/2.6d7c7915.chunk.css.map": "/kotofriends/static/css/2.6d7c7915.chunk.css.map",
+    "static/css/main.fc98a8a9.chunk.css.map": "/kotofriends/static/css/main.fc98a8a9.chunk.css.map",
+    "static/js/2.73a0657a.chunk.js.LICENSE.txt": "/kotofriends/static/js/2.73a0657a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/kotofriends/static/media/SEGA.47b4bfa9.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b543eda.js",
+    "static/css/2.6d7c7915.chunk.css",
+    "static/js/2.73a0657a.chunk.js",
+    "static/css/main.fc98a8a9.chunk.css",
+    "static/js/main.16a06e56.chunk.js"
+  ]
+}
